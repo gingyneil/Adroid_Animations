@@ -39,14 +39,14 @@ public class Ex2Activity extends AppCompatActivity {
     private void startAnimation()
     {
 
-        ImageView img = (ImageView)findViewById(R.id.ImageView_Boy);
+        ImageView img = (ImageView)findViewById(R.id.imageView_cheetah);
 
-        BitmapDrawable frame1 = (BitmapDrawable)getResources().getDrawable(R.drawable.boy1);
-        BitmapDrawable frame2 = (BitmapDrawable)getResources().getDrawable(R.drawable.boy2);
-        BitmapDrawable frame3 = (BitmapDrawable)getResources().getDrawable(R.drawable.boy3);
-        BitmapDrawable frame4 = (BitmapDrawable)getResources().getDrawable(R.drawable.boy4);
-        BitmapDrawable frame5 = (BitmapDrawable)getResources().getDrawable(R.drawable.boy5);
-        BitmapDrawable frame6 = (BitmapDrawable)getResources().getDrawable(R.drawable.boy6);
+        BitmapDrawable frame1 = (BitmapDrawable)getResources().getDrawable(R.drawable.cheetah1);
+        BitmapDrawable frame2 = (BitmapDrawable)getResources().getDrawable(R.drawable.cheetah2);
+        BitmapDrawable frame3 = (BitmapDrawable)getResources().getDrawable(R.drawable.cheetah3);
+        BitmapDrawable frame4 = (BitmapDrawable)getResources().getDrawable(R.drawable.cheetah1);
+        BitmapDrawable frame5 = (BitmapDrawable)getResources().getDrawable(R.drawable.cheetah2);
+        BitmapDrawable frame6 = (BitmapDrawable)getResources().getDrawable(R.drawable.cheetah3);
 
         // Get the background, which has been compiled to an AnimationDrawable object.
         int reasonableDuration = 250;
@@ -60,7 +60,7 @@ public class Ex2Activity extends AppCompatActivity {
         mframeAnimation.addFrame(frame6, reasonableDuration);
 
 
-        img.setBackgroundDrawable(mframeAnimation);
+        img.setImageDrawable(mframeAnimation);
 
         mframeAnimation.setVisible(true,true);
         mframeAnimation.start();
